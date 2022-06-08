@@ -93,6 +93,7 @@ def get_offset(vidfile, data_dir, reference):
     opt.tmp_dir = os.path.join(data_dir,'pytmp')
     opt.work_dir = os.path.join(data_dir,'pywork')
     
+    offset = None
     
     flist = glob.glob(os.path.join(opt.crop_dir,opt.reference,'0*.avi'))
     flist.sort()
